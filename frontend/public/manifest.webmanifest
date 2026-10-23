@@ -1,0 +1,14 @@
+{
+  "name": "paper-mirror · 译镜",
+  "short_name": "译镜",
+  "description": "本地解析论文，左栏英文原文、右栏中文译文，支持划选批注",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#f4f3f1",
+  "theme_color": "#4f46e5",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

@@ -1,0 +1,17 @@
+# 已弃用的早期 Worker 配置（仅作参考）。
+# 当前部署请使用仓库根目录的 wrangler.toml + functions/，见 docs/MIRROR.md。
+# 部署步骤：
+#   1. npx wrangler kv namespace create MIRROR_SYNC   # 把输出的 id 填到下面
+#   2. npx wrangler secret put SYNC_SECRET            # 输入一串只有你知道的长随机串
+#   3. npx wrangler deploy                            # 记下输出的 workers.dev 地址
+name = "paper-mirror-sync"
+main = "src/worker.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+# 浏览器推送将校验 Origin 必须来自镜像站
+SITE_ORIGIN = "https://your-site.example"
+
+[[kv_namespaces]]
+binding = "MIRROR_SYNC"
+id = "replace-with-your-kv-namespace-id"

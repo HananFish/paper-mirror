@@ -1,0 +1,17 @@
+background exception: ValueError missing key
+failed provider initialization: 200 document status: translating
+mock memory reused for real provider: tm:mock '【Mock译】An example transformer paragraph.' provider calls: 0
+new glossary applied to cached text: False
+cross-document note reference accepted: 200 2
+route exception: IntegrityError
+delete referenced other document: 500
+reparse already-parsing document: 200 new task calls: 1
+exported multiline highlight quad count: 1 stroke color: [1.0, 1.0, 0.0]
+HTTP exception: 500 导出 PDF 失败：Page.add_freetext_annot() got an unexpected keyword argument 'fill'
+PDF export with comment status: 500
+route exception: TypeError
+invalid settings accepted: 200 next settings GET: 500
+SYSTEM_PROMPT example rejected by parser: True
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+rotated block stored bbox: [72.0, 88.18, 245.62, 103.29] actual visual bbox: [738.71, 72.0, 753.83, 245.62]
+RapidOCR installed: True

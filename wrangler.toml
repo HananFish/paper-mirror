@@ -1,0 +1,11 @@
+# 镜像站（Cloudflare Pages）配置：批注同步 Functions 的绑定。
+# 密钥不写在这里：npx wrangler pages secret put SYNC_SECRET --project-name paper-mirror-1e16
+# 部署：npx wrangler pages deploy site --branch main --commit-dirty=true
+# 使用自己的 Cloudflare 账号时，请把 name 和 KV id 换成自己的（见 docs/MIRROR.md）。
+name = "paper-mirror-1e16"
+pages_build_output_dir = "site"
+compatibility_date = "2025-01-01"
+
+[[kv_namespaces]]
+binding = "MIRROR_SYNC"
+id = "487a178ec01e45efa54785f6357d85ee"

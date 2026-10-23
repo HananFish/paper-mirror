@@ -1,0 +1,29 @@
+{
+  "name": "paper-mirror-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build --config vite.config.mjs",
+    "preview": "vite preview",
+    "test:browser": "node ../scripts/test_browser.cjs",
+    "test:history": "node ../scripts/test_reading_history.cjs"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^4.10.38",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.3",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "6.1.2",
+    "playwright": "1.62.1",
+    "tailwindcss": "4.3.3",
+    "typescript": "~5.6.3",
+    "vite": "8.3.4"
+  }
+}
